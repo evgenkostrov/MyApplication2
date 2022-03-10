@@ -485,3 +485,15 @@ tools:text="Card"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
+
+
+holder.binding.image.load(it) {
+    memoryCachePolicy(CachePolicy.READ_ONLY)
+//                        crossfade(true)
+//                        crossfade(500)
+//                        placeholder(R.drawable.ic_hint)
+    size(300,300)
+    transformations(CoilGradientTransformation())
+//                        okhttp3.OkHttpClient.Builder()
+//                            .cache()
+}
